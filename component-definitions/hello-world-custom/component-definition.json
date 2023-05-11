@@ -1,0 +1,58 @@
+{
+  "component-definition": {
+    "uuid": "c6f3b85d-101c-40bf-a4f2-d3d9e6d83402",
+    "metadata": {
+      "title": "Hello World Custom Component Definition",
+      "last-modified": "2023-04-04T20:58:14.094501+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.0.2"
+    },
+    "components": [
+      {
+        "uuid": "b4f42dc8-59f8-4ccb-8e7f-6b73b663fb1d",
+        "type": "service",
+        "title": "Hello World",
+        "description": "Hello World Application",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Test-rule_001",
+            "remarks": "rule_set_0"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+            "value": "Ensure all of the services are running this test",
+            "remarks": "rule_set_0"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5455591c-0c85-4547-8200-5027411fc4eb",
+            "source": "profiles/ACME_internal_profile/profile.json",
+            "description": "This is a partial implementation of the ACME Internal profile",
+            "implemented-requirements": [
+              {
+                "uuid": "04bd0a4f-c8f0-4716-8487-fc615e0aeedd",
+                "control-id": "pr-1",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                    "value": "Test-rule_001"
+                  },
+                  {
+                    "name": "implementation-status",
+                    "value": "planned"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
